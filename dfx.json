@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "guzmanoustrous_backend": {
+      "declarations": {
+        "node_compatibility": true
+      },
+      "main": "src/guzmanoustrous_backend/main.mo",
+      "type": "motoko"
+    },
+    "guzmanoustrous_frontend": {
+      "dependencies": [
+        "guzmanoustrous_backend"
+      ],
+      "source": [
+        "src/guzmanoustrous_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "guzmanoustrous_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
